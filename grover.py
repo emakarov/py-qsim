@@ -51,7 +51,7 @@ def grover_sim(nqubits=3, desired_mode=0):
 
 
 def stem_psi(psi):
-    "Plotting the final distribution."
+    """Plotting the final distribution."""
     markerline, stemlines, baseline = plt.stem(psi*np.conj(psi))
     plt.setp(baseline, 'color', 'r', 'linewidth', 2)
     plt.show()
