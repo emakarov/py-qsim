@@ -34,7 +34,7 @@ def grover_sim(nqubits=3, desired_mode=0):
     probability = []
 
     for step in range(int(finish)):
-        # Applying operators oraclie and diffuse
+        # Applying operators oracle and diffuse
         psi = oracle.dot(psi)
         psi = diffuse.dot(psi)
 
