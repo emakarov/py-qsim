@@ -47,7 +47,7 @@ def grover_sim(nqubits=3, desired_mode=0):
         for k, v in enumerate(mods):
             print('mode {}:'.format(k), v)
 
-    return probability, psi
+    return probability, [p[0] for p in psi]
 
 
 def stem_psi(psi):
